@@ -1,0 +1,75 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-warning Heading">Emotion to Emoji
+        <br>
+        <span>&#128549;</span>
+        <span>&#128513;</span>
+        <span>&#128544;</span>
+        <span>&#128557;</span>
+        <span>&#128514;</span>
+        <span>&#128554;</span>
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam - </label>
+        <div id="camera"></div>
+        <br>
+        <button class="btn btn-primary" onclick="cap_picture()">Capture</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1</label>
+        <p id="emotion_name" class="ename"></p>
+        <p id="emoji_name" class="updateemoji"></p>
+        
+        <label>Prediction 2</label>
+        <p id="emotion_name2" class="ename"></p>
+        <p id="emoji_name2" class="updateemoji"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="snapshot"></div>
+        <br>
+        <button class="btn btn-primary" onclick="pre_image()">Predict</button>
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
